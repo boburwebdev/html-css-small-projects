@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;700&family=Sen:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1;
+}
+
+.header {
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    padding: 0 50px;
+    font-family: 'Sen', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    color: #13ad13;
+    font-size: 1rem;
+    font-weight: 700;
+    flex: 1.5;
+}
+
+.header-logo h1 {
+    margin: 0;
+}
+
+.header-nav {
+    flex: 6;
+}
+
+.header-profile {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-nav--list {
+    list-style: none;
+    display: flex;
+    font-size: 1rem;
+}
+
+.header-nav--list .header-nav--list-item+.header-nav--list-item {
+    margin-left: 2rem;
+}
+
+.header-nav--list .header-nav--list-item a {
+    display: inline-block;
+    color: #222;
+    text-decoration: none;
+    /* border-bottom: 2px solid transparent; */
+    transform: scale(1);
+    transition: all .2s;
+}
+
+.header-nav--list .header-nav--list-item a:hover {
+    /* border-bottom: 2px solid #222; */
+    transform: scale(1.05);
+}
+
+.header-nav--list .header-nav--list-item.active a {
+    font-weight: 600;
+}
+
+.header-profile--img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    object-fit: cover;
+}
+
+.header-profile--menu-container {
+    display: flex;
+    align-items: center;
+    margin-right: 2.5rem;
+}
+
+.header-profile--menu {
+    cursor: pointer;
+}
+
+.header-profile--toggle-mode {
+    background-color: #333;
+    color: gold;
+    height: 20px;
+    width: 40px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.header-profile--toggle-mode .toggle-button {
+    background-color: white;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+}
+
+
+.sidebar {
+    background-color: white;
+    width: 50px;
+    height: 100%;
+    padding-top: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar-menu {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-menu--item {
+    font-size: 1.2em;
+    margin-bottom: 1.8rem;
+}
+
+.sidebar-menu--item a {
+    display: inline-block;
+    color: #222;
+    text-decoration: none;
+    transform: scale(1);
+    transition: all .3s;
+}
+
+.sidebar-menu--item a:hover {
+    transform: scale(1.2);
+}
+
+
+.main {
+    background-color: indianred;
+    height: calc(100vh - 50px);
+    padding-left: 50px;
+}
