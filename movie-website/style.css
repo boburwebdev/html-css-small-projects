@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;700&family=Sen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;600;700&family=Sen:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -164,6 +164,10 @@ body {
     padding: 50px;
 }
 
+.featured-movies-two .featured-movies--item {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .25), rgba(255, 255, 255, .25)), url(img/f-2.jpg);
+}
+
 .featured-movies--item-img-title {
     width: 200px;
 }
@@ -193,4 +197,101 @@ body {
 
 .btn-watch:active {
     transform: translate(2px, 2px);
+}
+
+
+.section {
+    margin: 0 0 4rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.new-releases--container {
+    padding: 1.5rem 0;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.new-releases--movie-list {
+    display: flex;
+    width: 300%;
+}
+
+.new-releases--item {
+    width: 300px;
+    height: 240px;
+    margin-right: 2rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 1.5rem;
+    transition: all .3s;
+    transition-delay: .3s;
+}
+
+.new-releases--item:hover {
+    transform: scale(1.15);
+    margin: 0 3rem 3rem;
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, .3);
+}
+
+.new-releases--item:hover .new-releases--item-info {
+    opacity: 1;
+    transition: all .3s;
+}
+
+.new-releases--item-img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.new-releases--item-info {
+    opacity: 0;
+    background-color: rgba(255, 255, 255, .6);
+    color: white;
+    font-weight: 400;
+    height: 100%;
+    width: 100%;
+    padding: 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s;
+}
+
+.new-releases--item-title {
+    background-color: rgba(0, 0, 0, 1);
+    display: inline-block;
+    padding: .5rem;
+    margin-bottom: .5rem;
+}
+
+.new-releases--item-description {
+    background-color: rgba(0, 0, 0, 1);
+    line-height: 1.5;
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+
+.new-releases--item .btn-watch {
+    font-size: .9rem;
+    padding: .5rem 1rem;
+}
+
+.new-releases--icon-right-arrow {
+    background-color: rgba(255, 255, 255, .8);
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
